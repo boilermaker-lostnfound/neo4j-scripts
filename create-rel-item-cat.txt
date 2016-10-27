@@ -1,0 +1,48 @@
+MATCH (item:Item {label:"Headphone"}), (cat:Category {label:"Electronics"})
+	CREATE (item) - [conn:AS] -> (cat)	
+MATCH (item:Item {label:"Headphone"}), (cat:Category {label:"Traveling"})
+	CREATE (item) - [conn:AS] -> (cat)	
+MATCH (item:Item {label:"Headphone"}), (cat:Category {label:"Audio"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Headphone"}), (cat:Category {label:"Leisure"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Pencil"}), (cat:Category {label:"Working"})
+		CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Pencil"}), (cat:Category {label:"Writing Instruments"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Ballpen"}), (cat:Category {label:"Working"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Ballpen"}), (cat:Category {label:"Writing Instruments"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Fountain pen"}), (cat:Category {label:"Working"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Fountain pen"}), (cat:Category {label:"Writing Instruments"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Notebook"}), (cat:Category {label:"Working"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Notebook"}), (cat:Category {label:"Electronics"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Mouse"}), (cat:Category {label:"Working"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Mouse"}), (cat:Category {label:"Electronics Accessories"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Spare Battery"}), (cat:Category {label:"Electronics Accessories"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Backpack"}), (cat:Category {label:"Traveling"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Backpack"}), (cat:Category {label:"Leisure"})
+	CREATE (item) - [conn:AS] -> (cat)
+	
+MATCH (item:Item {label:"Phone"}), (cat:Category {label:"Leisure"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Phone"}), (cat:Category {label:"Working"})
+	CREATE (item) - [conn:AS] -> (cat)
+MATCH (item:Item {label:"Phone"}), (cat:Category {label:"Audio"})
+	CREATE (item) - [conn:AS] -> (cat)

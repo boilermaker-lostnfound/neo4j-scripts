@@ -1,0 +1,2 @@
+MATCH (tag:NFCTag {guid:"1a4236d9-7429-4457-a933-fd122d61c0ff"}), (item:Item {label:"Backpack"})
+	CREATE (tag) - [conn:ATTACHED] -> (item)

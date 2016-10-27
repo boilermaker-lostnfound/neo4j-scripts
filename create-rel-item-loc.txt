@@ -1,0 +1,37 @@
+MATCH (item:Item {label:"Pencil"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+MATCH (item:Item {label:"Pencil"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:0}] -> (loc)
+MATCH (item:Item {label:"Pencil"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:0}] -> (loc)
+MATCH (item:Item {label:"Pencil"}), (loc:Location {label:"Nightstand"})
+	CREATE (item) - [conn:LOCATED {active:0}] -> (loc)
+	
+MATCH (item:Item {label:"Ballpen"}), (loc:Location {label:"Nightstand"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+MATCH (item:Item {label:"Ballpen"}), (loc:Location {label:"Living Room Table"})
+	CREATE (item) - [conn:LOCATED {active:0}] -> (loc)
+MATCH (item:Item {label:"Ballpen"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:0}] -> (loc)
+	
+MATCH (item:Item {label:"Fountain pen"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Mouse"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Notebook"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Phone"}), (loc:Location {label:"Office Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Spare Battery"}), (loc:Location {label:"Office Cabinet"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Backpack"}), (loc:Location {label:"Living Room Cabinet"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	
+MATCH (item:Item {label:"Headphone"}), (loc:Location {label:"Living Room Table"})
+	CREATE (item) - [conn:LOCATED {active:1}] -> (loc)
+	

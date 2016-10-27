@@ -1,0 +1,2 @@
+MATCH (rasp:RaspberryPi {guid:"48fd459e-a1a6-456d-9b09-09a53e7a24b0"}), (loc:Location {label:"Office Table"})
+	CREATE (rasp) - [conn:LOCATED_AT] -> (loc)
